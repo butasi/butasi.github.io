@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rodgers Butasi - Linux System Administrator | Embedded Systems Developer | PCB Designer">
+    <meta name="author" content="Rodgers Butasi">
+    <meta property="og:title" content="Rodgers Butasi - Resume">
+    <meta property="og:description" content="Linux System Administrator | Embedded Systems Developer | PCB Designer">
+    <meta property="og:image" content="{{ YOUR_PROFILE_IMAGE_URL }}">
+    <meta property="og:url" content="{{ YOUR_WEBSITE_URL }}">
+    <title>Rodgers Butasi | Resume</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Rodgers Butasi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><button class="btn btn-outline-light" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="text-center py-5">
+    <h1 class="display-4">Rodgers Butasi</h1>
+    <p class="lead">Linux System Administrator | Embedded Systems Developer | PCB Designer</p>
+</header>
+
+<!-- About Section -->
+<section id="about" class="container py-4">
+    <h2>About Me</h2>
+    <p>Passionate about **Linux system administration, embedded systems, and STEM innovation**.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="container py-4">
+    <h2>Skills</h2>
+    <ul>
+        <li><i class="fa-solid fa-linux"></i> Linux System Administration (Arch Linux, Raspberry Pi)</li>
+        <li><i class="fa-solid fa-microchip"></i> Microcontroller Programming (STM32, ATmega328P, ESP32)</li>
+        <li><i class="fa-solid fa-microchip"></i> PCB Design & Prototyping (KiCad)</li>
+        <li><i class="fa-brands fa-python"></i> Python Development (Automation, Computer Vision)</li>
+        <li><i class="fa-solid fa-wifi"></i> IoT & Wireless Communication (nRF24L01, RFID, IR modules)</li>
+    </ul>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container py-4">
+    <h2>GitHub Projects</h2>
+    <p>Explore my projects on GitHub:</p>
+    <ul>
+        <li><a href="{{ YOUR_GITHUB_PROJECT_1 }}" target="_blank"><i class="fa-brands fa-github"></i> Project 1</a></li>
+        <li><a href="{{ YOUR_GITHUB_PROJECT_2 }}" target="_blank"><i class="fa-brands fa-github"></i> Project 2</a></li>
+        <li><a href="{{ YOUR_GITHUB_PROJECT_3 }}" target="_blank"><i class="fa-brands fa-github"></i> Project 3</a></li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container py-4">
+    <h2>Contact</h2>
+    <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:{{ YOUR_EMAIL }}">{{ YOUR_EMAIL }}</a></p>
+    <p><i class="fa-solid fa-phone"></i> Phone: {{ YOUR_PHONE }}</p>
+    <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="{{ YOUR_LINKEDIN }}" target="_blank">{{ YOUR_LINKEDIN }}</a></p>
+    <p><i class="fa-brands fa-github"></i> GitHub: <a href="{{ YOUR_GITHUB }}" target="_blank">{{ YOUR_GITHUB }}</a></p>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/{{ YOUR_FORMSPREE_ENDPOINT }}" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+    <p>&copy; 2025 Rodgers Butasi. All Rights Reserved.</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
